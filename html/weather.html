@@ -1,0 +1,51 @@
+<!--
+ * @name: Assignement1
+ * @Course Code: SODV1201_22MAYMNOT4
+ * @class: Software Development Diploma program.
+ * @author: John Esmilio  
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/weatherstyle.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <title>Weather</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="staffpage.html">Staff Page</a></li>
+        <li><a href="gradeconverter.html">Grade Converter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Temperature <Span>Converter</Span></h1>
+    <p class="userTempValue">Enter a temperature value (&#176;F)</p>
+    <input type="text" placeholder="&#176;F" id="userF-Input">
+    <button onclick="anonymous()" type="submit">Convert</button>
+    <p>Fahrenheit To Celsuis: </p><p id="celsiusValue" placeholder="C&#176" name="celsiusValue"></p>
+    <p>Celsuis To Kelvin: </p><p id="kelvinValue" placeholder="K"></p>
+  </section>
+
+  <footer class="footer">
+    <p>&#169; John Esmilio, 2022</p>
+    <p id="footerdate"></p>
+  </footer>
+
+  <script>
+    //Script that gets today's date and stores it into #footerdate.
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth() + 1)+ '-' + today.getDate();
+    document.getElementById("footerdate").innerHTML = ", Date: " + date;
+    </script>
+  <script src="../js/SODV1201_A1_John_Index.js"></script>
+  
+</body>
+</html>

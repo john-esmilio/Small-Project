@@ -1,0 +1,51 @@
+<!--
+ * @name: Assignement1
+ * @Course Code: SODV1201_22MAYMNOT4
+ * @class: Software Development Diploma program.
+ * @author: John Esmilio  
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/gradeconverterstyle.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <title>Grade Converter</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="staffpage.html">Staff Page</a></li>
+        <li><a href="weather.html">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Grade <span>Converter</span></h1>
+    <p class="letterGrade">Enter Grade:</p>
+    <input type="text" placeholder="0 - 100" id="userGradeInput">
+    <button type="submit" class="btn" onclick="gradeConvert();">Check Grade</button>
+    <b><p id="userGrade"></p></b>
+    <p id="gradeError"></p>
+    <div id="errorReport"></div>
+  </section>
+
+  <footer class="footer">
+    <p>&#169; John Esmilio, 2022</p>
+    <p id="footerdate"></p>
+  </footer>
+
+  <script>
+    //Script that gets today's date and stores it into #footerdate.
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth() + 1)+ '-' + today.getDate();
+    document.getElementById("footerdate").innerHTML = ", Date: "+ date;
+    </script>
+  <script src="../js/SODV1201_A1_John_Index.js"></script>
+</body>
+</html>

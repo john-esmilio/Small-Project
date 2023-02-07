@@ -1,0 +1,150 @@
+/**
+ * @name: Assignement1
+ * @Course Code: SODV1201_22MAYMNOT4
+ * @class: Software Development Diploma program.
+ * @author: John Esmilio  
+ */
+
+ /*imported Roboto font from google*/
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+ 
+*{
+  /*universal margin and padding for the whole webpage.*/
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  /*red header takes the full width of page with a
+  view height of 9. A box shadow is added
+  to enhance the depth of the banner.*/
+  width: 100%;
+  height: 9vh;
+  border: 1px solid red;
+  background-color: red;
+  box-shadow: 0px 5px 15px 1px;
+  position: static;
+}
+
+nav ul{
+  /*Navigation is positioned to the right of the page,
+  and is positioned 10% to the left*/
+  float: right;
+  right: 10%;
+  position: absolute;
+}
+
+nav ul li{
+  /*Navigation is positioned to the right of the page,
+  and is positioned 10% to the left*/
+  display: inline-block;
+  list-style: none;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul li a{
+  /* list padding from the top and the left and right. 
+  Block display for a horizontal viewing and no list decoration*/
+  padding: 28px 10px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Lucida Sans';
+}
+
+nav ul li a:hover{
+  /*when mouse is hovered over the list elements,
+  a darker red border box will appear*/
+  border: darkred 1px solid;
+  background-color: darkred;
+}
+body{
+  /*Sets body font to Roboto and sans-serif as a backup.*/
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  /*Changes the font size for this header to 4em
+  and adds 2% margin below the header*/
+  font-size: 4em;
+  margin-bottom: 2%;
+}
+
+span{
+  /* Adds a dark red color to the span tag
+  to add to the theme of the webpage.*/
+  color: darkred;
+}
+
+section{
+  /*justifies content to the center of the webpage and
+  aligns it in a column view with the flex column property.*/
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.letterGrade{
+  /* adds a bigger font size, underlined text,
+  and some space from the text below the "Enter Grade" text*/
+  font-size: x-large;
+  text-decoration: underline;
+  padding-bottom: 1%;
+}
+
+input{
+  /*aligns text of the text box in the center*/
+  text-align: center;
+}
+
+button{
+  /*Adds space above the button, adds a different font
+  to the text within the button, and makes the text bold
+  so it's easier to see.*/
+  margin-top: 1%;
+  font-family:'roboto';
+  font-weight: bold;
+}
+
+#userGrade{
+  /*Adds space to the top of the user grade text when 
+  it appears and the font size is increased for visibility.*/
+  margin-top: 10%;
+  font-size: xx-large;
+}
+
+#gradeError{
+  /*Adds space to the top of the grade error text when 
+  it appears and the font weight is increased for visibility
+  and boldness.*/
+  margin-top: 2%;
+  font-weight: 200;
+}
+
+#errorReport{
+  /*Simply increases font size for the user's visibility*/
+  font-size: xx-large;
+
+}
+
+.footer{
+  /* Sets the footer to the very bottom of the page */
+  position: fixed;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: red;
+  font-size: 1.4rem;
+  font-style: bold;
+}

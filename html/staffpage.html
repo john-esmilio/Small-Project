@@ -1,0 +1,58 @@
+<!--
+ * @name: Assignement1
+ * @Course Code: SODV1201_22MAYMNOT4
+ * @class: Software Development Diploma program.
+ * @author: John Esmilio  
+--><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/staffstyle.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <title>Staff Page</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gradeconverter.html">Grade Converter</a></li>
+        <li><a href="weather.html">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Staff <Span>Table</Span></h1>
+  <section>
+    <label for="staffTable">Sort By: </label>
+    <button type="submit" value="submit" onclick="sortArrNameDesc();">Name (Descending)</button>
+    <button type="submit" value="submit" onclick="sortArrNameAsc()">Name (Ascending)</button>
+    <button type="submit" value="submit" onclick="sortArrSalaryDesc()">Salary (Descending)</button>
+    <button type="submit" value="submit" onclick="sortArrSalaryAsc()">Salary (Ascending)</button>
+  </section>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Position</th>
+    <th>Location</th>
+    <th>ID</th>
+    <th>Date Joined</th>
+    <th>Salary</th>
+  </tr>
+  <tbody id="table"></tbody>
+</table>
+
+  <footer class="footer">
+    <p>&#169; John Esmilio, 2022</p>
+    <p id="footerdate"></p>
+  </footer>
+  <script>
+    //Script that gets today's date and stores it into #footerdate.
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth() + 1)+ '-' + today.getDate();
+    document.getElementById("footerdate").innerHTML = ", Date: " + date;
+    </script>
+  <script src="../js/SODV1201_A1_John_Index.js"></script>
+</body>
+</html>
